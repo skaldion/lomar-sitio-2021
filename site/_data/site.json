@@ -1,9 +1,9 @@
 {
-	"siteName": "Skaldion Eleventy Template",
-	"title": "Eleventy Template by Skaldion",
-	"description": "Eleventy Template for Skaldion Websites",
-	"url": "/",
+	"siteName": "Lomar S.C. Asesores Fiscales y Administrativos",
+	"title": "Lomar S.C.",
+	"description": "Lomar S.C. Asesores Fiscales y Administrativos",
+	"url": "http://www.lomar.mx",
 	"locale": "es",
 	"author": "Skaldion",
-	"companyName": "Skaldion"
+	"companyName": "Lomar"
 }

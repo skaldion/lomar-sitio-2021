@@ -1,0 +1,14 @@
+@use 'fonts';
+@use 'colors';
+
+.side-image {
+  padding: 70px 0;
+
+  img {
+    max-width: 500px;
+  }
+
+  &.white-bg {
+    background-color: colors.$white;
+  }
+}

@@ -1,12 +1,54 @@
 ---
 layout: base.ejs
 ---
-<section class="hero-cta">
-    <div class="hero-message">
-        <img src="images/logo.png" alt="company logo">
-        <h1>Hello World</h1>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contact-modal">
-            Click me!
-        </button>
-    </div>
-</section>
+<%- include('/hero', {
+        mainText: 'Somos una consultoria empresarial integral.',
+        secondaryText: [
+            'Tenemos mas de 15 anhos de experiencia en servicios fiscales, legales, contables y de administracion financiera.',
+            'Pondremos tu empresa en linea!'
+        ],
+        ctaButtonText: 'Preguntanos como!'
+    })
+%>
+
+<%- include('/features', {
+        features: [
+            {
+                heading: 'Fiscal',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+            },{
+                heading: 'Contable',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+            },{
+                heading: 'Legal-tech',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+            },{
+                heading: 'Comercio exterior',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+            },
+        ],
+    })
+%>
+
+<%- include('/side-image', {
+        heading: 'Nuestra experiencia nos diferencia.',
+        image: { src: '/images/side-image-experiencia.jpg', alt: 'Experiencia en consultoria de negocios' },
+        description: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        ]
+    })
+%>
+
+<%- include('/carousel') %>
+
+<%- include('/cta', {
+        mainText: 'Recibe tu manual gratuito ahora mismo!',
+        secondaryText: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        ],
+        ctaButtonText: 'Recibe tu manual gratuito'
+    })
+%>
+
+<%- include('/footer') %>

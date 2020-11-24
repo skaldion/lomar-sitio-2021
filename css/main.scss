@@ -8,6 +8,12 @@
 @import '../node_modules/bootstrap/scss/transitions';
 @import '../node_modules/bootstrap/scss/modal';
 @import '../node_modules/bootstrap/scss/close';
+@import "../node_modules/bootstrap/scss/carousel";
 @import "globals";
 @import "nav-bar";
 @import "hero";
+@import "features";
+@import "side-image";
+@import "carousel";
+@import "cta";
+@import "footer";

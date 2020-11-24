@@ -1,0 +1,34 @@
+<section class="footer-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h5>Partners</h5>
+                <ul>
+                    <li>Estudio Jurídico Internacional López-Ibor Y Asociados S.L.</li>
+                    <li>Free Trade Zone Joy Trading Co. Ltd.</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h5>Contacto</h5>
+                <ul>
+                    <li>Telefono</li>
+                    <li>Email</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h5>Paginas</h5>
+                <ul>
+                    <% collections.all.forEach((navPage) => { %>
+                        <% if (!navPage.data || !navPage.data.title) return;%>
+                        <li>
+                            <a class="navigation-item<%- ` ${page.url === navPage.url && 'active'}` %>"
+                               href="<%- navPage.url %>">
+                                <%= navPage.data.title %>
+                            </a>
+                        </li>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

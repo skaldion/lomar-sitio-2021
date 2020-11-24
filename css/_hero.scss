@@ -1,9 +1,27 @@
+@use 'fonts';
 @use 'colors';
 
-.hero-cta {
-  max-width: 400px;
-  margin: 0 auto;
+.hero {
+  min-height: 500px;
+  padding: 70px 0;
+  h1 {
+    font-size: fonts.$hero-h1-size;
+    line-height: 60px;
+  }
+  p {
+    font-size: 21px;
+  }
+  &.blue {
+    background-attachment: local;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/images/hero-reception-1900x1200.jpg");
+    background-color: colors.$blue;
+    background-blend-mode: darken;
+    color: colors.$white;
+  }
   .hero-message {
-    text-align: center;
+    text-align: left;
+    max-width: 600px;
   }
 }

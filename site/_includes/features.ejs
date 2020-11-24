@@ -1,0 +1,12 @@
+<section class="features">
+    <div class="container">
+        <div class="row">
+            <% features.forEach((feature) => { %>
+                <div class="col-sm">
+                    <h3><%- feature.heading %></h3>
+                    <p><%- feature.description %></p>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</section>

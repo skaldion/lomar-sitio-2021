@@ -1,10 +1,13 @@
 @use 'colors';
 
 .navigation-bar-top {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
   background-color: white;
+  .navigation-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    background-color: white;
+  }
   .navigation-logo, .navigation-item {
     color: colors.$blue-dark;
   }
