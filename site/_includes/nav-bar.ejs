@@ -1,6 +1,6 @@
 <div class="navigation-bar-top">
     <div class="navigation-container container">
-        <a class="navigation-logo" href="<%- buildTime.environment === 'DEV' ? '/' : site.url %>"><%- site.companyName %></a>
+        <a class="navigation-logo" href="<%- buildTime.siteURL %>"><%- site.companyName %></a>
         <nav class="navigation">
             <% collections.pages.forEach(function (navPage) { %>
                 <a class="navigation-item<%- ` ${page.url === navPage.url && 'active'}` %>"

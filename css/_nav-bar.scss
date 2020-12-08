@@ -9,7 +9,12 @@
     background-color: white;
   }
   .navigation-logo, .navigation-item {
-    color: colors.$blue-dark;
+    color: colors.$blue-002;
+    transition: color 0.2s ease;
+    &:hover {
+      color: colors.$blue-003;
+      text-decoration: none;
+    }
   }
   .navigation-logo {
     display: inline-block;
@@ -30,7 +35,12 @@
       text-transform: uppercase;
       &.active {
         color: colors.$white;
-        background-color: colors.$purple;
+        background-color: colors.$blue-004;
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+        &:hover {
+          background-color: lighten(colors.$blue-004, 10%);
+        }
       }
     }
   }
