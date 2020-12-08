@@ -22,6 +22,18 @@
   }
   .hero-message {
     text-align: left;
-    max-width: 600px;
+  }
+
+  @media (min-width: 760px) {
+    .hero-message {
+      max-width: 600px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    padding: 100px 0;
+    .hero-message {
+      max-width: 1000px;
+    }
   }
 }
