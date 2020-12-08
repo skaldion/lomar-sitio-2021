@@ -1,5 +1,6 @@
 @use 'fonts';
 @use 'colors';
+@use 'variables';
 
 .hero {
   min-height: 500px;
@@ -26,13 +27,13 @@
     text-align: left;
   }
 
-  @media (min-width: 760px) {
+  @media (min-width: variables.$size-m) {
     .hero-message {
       max-width: 550px;
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: variables.$size-l) {
     padding: 100px 0;
     .hero-message {
       max-width: 1000px;
