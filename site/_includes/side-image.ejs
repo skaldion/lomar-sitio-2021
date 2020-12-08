@@ -1,11 +1,11 @@
-<section class="side-image white-bg">
+<section class="side-image-block <%- additionalClasses %>">
     <div class="container">
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm image">
                 <img src="<%- image.src %>" alt="<%- image.alt %>">
             </div>
-            <div class="col-sm">
-                <h3><%- heading %></h3>
+            <div class="col-sm content">
+                <h2><%- heading %></h2>
                 <% description.forEach((paragraph) => { %>
                     <p><%- paragraph %></p>
                 <% }); %>

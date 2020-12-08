@@ -1,1 +1,14 @@
 $hero-h1-size: 50px;
+
+@font-face {
+  font-family: 'HallFetica';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local('HallFetica'),
+  url('HallFetica.ttf') format('truetype');
+}
+
+.navigation-bar-top {
+  font-family: 'HallFetica', Arial;
+}

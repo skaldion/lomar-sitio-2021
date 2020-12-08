@@ -21,10 +21,11 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
+    <link rel="preload" href="assets/HallFetica.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="<%- buildTime.environment === 'DEV' ? '/assets/styles.css' : '/assets/styles.min.css' %>">
+    <link rel="stylesheet" href="<%- buildTime.cssAssetURL %>">
 
     <meta name="theme-color" content="#fafafa">
 </head>
@@ -34,8 +35,9 @@
 <% include /nav-bar %>
 <%- content %>
 <% include /contact-modal %>
+<% include /footer %>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-<script src="<%- buildTime.environment === 'DEV' ? '/assets/main.js' : '/assets/main.min.js' %>"></script>
+<script src="<%- buildTime.jsAssetURL %>"></script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

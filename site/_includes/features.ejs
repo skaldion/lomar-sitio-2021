@@ -1,10 +1,28 @@
-<section class="features">
+<section class="features-block <%- additionalClasses %>">
     <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h2 class="title"><%- title %></h2>
+                <% if (description) { %>
+                    <p><%- description %></p>
+                <% } %>
+            </div>
+        </div>
         <div class="row">
             <% features.forEach((feature) => { %>
                 <div class="col-sm">
-                    <h3><%- feature.heading %></h3>
+                    <% if (feature.image) { %>
+                        <img src="<%- feature.image.src%>" alt="<%- feature.image.alt%>">
+                    <% } %>
+                    <h4><%- feature.heading %></h4>
                     <p><%- feature.description %></p>
+                    <% if (feature.subFeatures) { %>
+                        <ul>
+                            <% feature.subFeatures.forEach( subFeature => { %>
+                                <li><%- subFeature %></li>
+                            <% }); %>
+                        </ul>
+                    <% } %>
                 </div>
             <% }); %>
         </div>

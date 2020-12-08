@@ -19,6 +19,7 @@
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+    text-transform: uppercase;
   }
   .navigation {
     display: flex;
@@ -26,6 +27,7 @@
     margin-left: auto;
     .navigation-item {
       padding: .5rem;
+      text-transform: uppercase;
       &.active {
         color: colors.$white;
         background-color: colors.$purple;

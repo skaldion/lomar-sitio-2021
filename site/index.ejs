@@ -2,53 +2,105 @@
 layout: base.ejs
 ---
 <%- include('/hero', {
-        mainText: 'Somos una consultoria empresarial integral.',
+        mainText: '¿Ya sabe que son las plataformas digitales y lo que implican?',
         secondaryText: [
-            'Tenemos mas de 15 anhos de experiencia en servicios fiscales, legales, contables y de administracion financiera.',
-            'Pondremos tu empresa en linea!'
+            'En Lomar lo asesoramos para que esté en orden con el SAT y sus cambios más recientes.',
+            'Su situación fiscal podría necesitar atención inmediata. Acérquese, su primera consulta es gratuita!'
         ],
-        ctaButtonText: 'Preguntanos como!'
-    })
-%>
-
-<%- include('/features', {
-        features: [
-            {
-                heading: 'Fiscal',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-            },{
-                heading: 'Contable',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-            },{
-                heading: 'Legal-tech',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-            },{
-                heading: 'Comercio exterior',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-            },
-        ],
+        ctaButtonText: 'Pide tu consulta gratuita!'
     })
 %>
 
 <%- include('/side-image', {
-        heading: 'Nuestra experiencia nos diferencia.',
-        image: { src: '/images/side-image-experiencia.jpg', alt: 'Experiencia en consultoria de negocios' },
-        description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-        ]
+    heading: 'Plataformas tecnológicas',
+    image: { src: '/images/side-image-experiencia.jpg', alt: 'Experiencia en consultoria de negocios' },
+    description: [
+        'Es el término que usa el SAT para referirse a cualquier aplicación que necesite una conexion a Internet para desempeñar sus funciones.',
+        'Es muy importante que estén bien orientados para que sepan cual es su régimen fiscal correcto, ya que desde el primero de Junio de 2020 el SAT requiere que actualicen sus actividades económicas y obligaciones fiscales ante el RFC si realizan o planean realizar cualquier actividad que incluya el uso de plataformas tecnológicas.'
+    ],
+    additionalClasses: 'white-bg image-left'
+})
+%>
+
+<%- include('/features', {
+title: 'Ejemplos de plataformas tecnológicas',
+description: 'Estas son algunas de las aplicaciones y sitios que son consideradas plataformas tecnológicas. Si realiza sus actividades economicas a traves de una de las siguientes plataformas o una similar, es muy probable que sea necesario actualizarlo para evitar problemas con el SAT.',
+features: [
+{
+heading: 'Sitios de Internet',
+subFeatures: ['YouTube', 'AirBnB', 'OnlyFans', 'Patreon', 'Udemy']
+},{
+heading: 'Sitios de comercio electronico',
+subFeatures: ['MercadoLibre', 'Ebay', 'WooCommerce', 'Amazon', 'Shopify']
+},{
+heading: 'Aplicaciones moviles',
+subFeatures: ['Uber', 'Uber Eats', 'Rappi', 'SinDelantal']
+}
+],
+additionalClasses: ''
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Lomar Consultores',
+image: { src: '/images/side-image-experiencia.jpg', alt: 'Experiencia en consultoria de negocios' },
+description: [
+'Somos una consultoría empresarial integral con más de 15 años de experiencia en diversas áreas relacionadas con la asesoría de empresas.',
+'Si realiza actividades como vender bienes, prestar servicios, o rentar bienes a través de plataformas tecnológicas, debe orientarse muy bien ya que es muy probable que usted deba actualizarse ante el SAT.',
+'Nosotros le ofrecemos la primera asesoría gratis para que de acuerdo con las leyes fiscales vigentes conozca adecuadamente cuáles son sus obligaciones ante el SAT o ante cualquier otra dependencia.',
+],
+additionalClasses: 'white-bg image-right'
+})
+%>
+
+<%- include('/features', {
+        title: 'Servicios',
+        description: '',
+        features: [
+            {
+                image: { src: '/images/side-image-experiencia.jpg', alt: 'Experiencia en consultoria de negocios' },
+                heading: 'Cambio de Regimen',
+                description: 'Presentamos su aviso ante el SAT para su cambio de régimen o en su caso, para su inscripción en el RFC.'
+            },{
+                image: { src: '/images/side-image-experiencia.jpg', alt: 'Experiencia en consultoria de negocios' },
+                heading: 'Contabilidad',
+                description: 'Llevamos su contabilidad para que pague sus impuestos de forma correcta dentro del marco fiscal que le corresponde.'
+            },{
+                image: { src: '/images/side-image-experiencia.jpg', alt: 'Experiencia en consultoria de negocios' },
+                heading: 'Declaraciones Fiscales',
+                description: 'Presentamos todas sus declaraciones fiscales tanto mensuales como anuales.'
+            }
+        ],
+additionalClasses: ''
     })
+%>
+
+<%- include('/features', {
+title: 'Ventajas',
+description: '',
+features: [
+{
+image: { src: '/images/side-image-experiencia.jpg', alt: 'Experiencia en consultoria de negocios' },
+heading: 'Sin riesgos',
+description: 'Con nosotros, tiene la garantia de que estara siempre en orden ante el SAT. De esta manera si el SAT lo requiere, no tiene nada de que preocuparse y usted puede concentrarse en dirigir su negocio.'
+},{
+image: { src: '/images/side-image-experiencia.jpg', alt: 'Experiencia en consultoria de negocios' },
+heading: 'Pago de impuestos optimo',
+description: 'Lo asesoraremos para que adopte las mejores practicas para administrar todos los movimientos de su negocio. De esta manera le garantizamos que su pago de impuestos siempre sera optimo.'
+}
+],
+    additionalClasses: 'white-bg'
+})
 %>
 
 <%- include('/carousel') %>
 
 <%- include('/cta', {
-        mainText: 'Recibe tu manual gratuito ahora mismo!',
+        mainText: 'Paga menos impuestos!',
         secondaryText: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'En Lomar administramos perfectamente sus ingresos y egresos para un pago óptimo de sus impuestos.',
+            'Los asesoramos para que estén siempre al corriente con los constantes cambios de la ley fiscal.'
         ],
-        ctaButtonText: 'Recibe tu manual gratuito'
+        ctaButtonText: 'Pide tu consulta gratis!'
     })
 %>
-
-<%- include('/footer') %>

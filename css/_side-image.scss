@@ -1,14 +1,24 @@
 @use 'fonts';
 @use 'colors';
 
-.side-image {
+.side-image-block {
   padding: 70px 0;
 
   img {
     max-width: 500px;
   }
 
+  &.image-right {
+    .image {
+      order: 2;
+    }
+    .content {
+      order: 1;
+    }
+  }
+
   &.white-bg {
     background-color: colors.$white;
   }
+
 }
