@@ -4,7 +4,7 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
-
+    Armando Lopez M -- Developer -- twitter.com/skaldion
 # THANKS
 
     <name>
