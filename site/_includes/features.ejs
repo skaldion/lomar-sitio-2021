@@ -12,10 +12,14 @@
             <% features.forEach((feature) => { %>
                 <div class="col-sm">
                     <% if (feature.image) { %>
-                        <img src="<%- feature.image.src%>" alt="<%- feature.image.alt%>">
+                        <div class="image">
+                            <img src="<%- feature.image.src%>" alt="<%- feature.image.alt%>">
+                        </div>
                     <% } %>
                     <h4><%- feature.heading %></h4>
-                    <p><%- feature.description %></p>
+                    <% if (feature.description) { %>
+                        <p><%- feature.description %></p>
+                    <% } %>
                     <% if (feature.subFeatures) { %>
                         <ul class="sub-features">
                             <% feature.subFeatures.forEach( subFeature => { %>

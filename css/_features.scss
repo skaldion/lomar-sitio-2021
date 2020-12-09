@@ -1,16 +1,22 @@
 @use 'fonts';
 @use 'colors';
+@use 'variables';
 
 .features-block {
   padding: 70px 0;
+
+  .image {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
   &.white-bg {
     background-color: colors.$white;
   }
 
   .title {
-    padding-bottom: 20px;
     margin: 0;
+    padding-bottom: 10px;
   }
 
   .sub-features {
@@ -19,9 +25,27 @@
     padding: 0;
   }
 
-  img {
-    width: 150px;
-    padding-bottom: 20px;
+  &.icons {
+    img {
+      width: 150px;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
 
+  .col-sm {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: variables.$size-m) {
+    .title {
+      padding-bottom: 20px;
+    }
+    .col-sm {
+      margin-bottom: 0;
+    }
+    .image {
+      margin-bottom: 20px;
+    }
   }
 }
