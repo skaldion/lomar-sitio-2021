@@ -12,7 +12,6 @@
   }
   p {
     font-size: 21px;
-    margin-bottom: 40px;
   }
   &.blue {
     background-attachment: local;
@@ -25,6 +24,7 @@
   }
   .hero-message {
     text-align: left;
+    margin-bottom: 40px;
   }
 
   @media (min-width: variables.$size-m) {
