@@ -1,0 +1,52 @@
+---
+title: 'Servicios'
+permalink: 'servicios/index.html'
+---
+<%- include('/hero', {
+mainText: 'Nuestros Servicios Fiscales, Contables, Legales y De Comercio Exterior',
+secondaryText: [
+'Son de la más alta calidad y profesionalismo en el mercado. Más de 17 años nos respaldan.',
+'¡La primera consulta es gratis!'
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'servicios-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Experiencia',
+image: { src: '/images/officemeet.jpg', alt: 'Experiencia en consultoria de negocios' },
+description: [
+'El 90% de nuestros clientes son empresas familiares. Nuestra especialidad es la asesoría empresarial a micro, pequeñas y medianas empresas.',
+'Resolvemos tus dudas elaborando un caso práctico para la toma de sus decisiones empresariales',
+'Con amplia experiencia en la gestión ante instituciones públicas de los diversos poderes del Estado en los tres niveles de gobierno.',
+],
+additionalClasses: 'white-bg image-right'
+})
+%>
+
+<%- include('/features', {
+title: 'SERVICIOS',
+description: 'Somos una firma que abarca varios aspectos profesionales integrales, para su empresa. Nuestros servicios dan un valor agregado real en comparativa con otros despachos ya que nosotros establecemos una relación profesional ganar-ganar con nuestros clientes.',
+features: [
+{
+image: { src: "/images/desktop-icon.png", alt: "Sitios de internet"},
+heading: 'Fiscal',
+subFeatures: ['Impuestos', 'Personas Morales', 'Personas Físicas', 'Régimen de Incorporación Fiscal', 'Actividades Empresariales y Profesionales']
+},{
+image: { src: "/images/e-commerce-icon.png", alt: "Comercio electronico"},
+heading: 'Contable',
+subFeatures: ['CFDI (Facturación y Nóminas)', 'Declaraciones', 'Balance General y Estado de Resultados', 'Auditoría']
+},{
+image: { src: "/images/mobile-icon.png", alt: "Dispositivos moviles"},
+heading: 'Legaltech',
+subFeatures: ['Contratos', 'Sociedades Mercantiles', 'Propiedad Intelectual e Industrial', 'Marketplaces jurídicos', 'Protección de Datos', 'Informátic Forense y Pericial', 'Compliance y Anticorrupción', 'Gestión Digital']
+},{
+image: { src: "/images/mobile-icon.png", alt: "Dispositivos moviles"},
+heading: 'Comercio Exterior',
+subFeatures: ['Búsqueda de Proveedores a Nivel Mundial', 'Negociación Internacional', 'Supervisión de Producción y Control de Calidad', 'Logística Trasnacional','Trámites Aduanales', 'Inversión Extranjera' ]
+}
+],
+additionalClasses: 'icons'
+})
+%>

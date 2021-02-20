@@ -3,12 +3,12 @@ title: 'Nosotros'
 permalink: 'nosotros/index.html'
 ---
 <%- include('/hero', {
-mainText: 'Pondremos su negocio en linea!',
+mainText: '¡Pondremos su negocio en linea!',
 secondaryText: [
 'Ofrecemos servicios de consultoría empresarial sin complicaciones. Solo tiene que ponerse en contacto.',
-    'La primera consulta es gratis!'
+    '¡La primera consulta es gratis!'
 ],
-ctaButtonText: 'Pida su consulta gratuita!',
+ctaButtonText: '¡Pida su consulta gratuita!',
 additionalClasses: 'update-bg'
 })
 %>
@@ -37,6 +37,33 @@ description: 'Ser un despacho modelo en el ámbito de consultoría empresarial i
 }
 ],
 additionalClasses: 'white-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Valores',
+image: { src: '/images/valores.jpeg', alt: 'Valores profesionales Lomar consultores' },
+description: [
+'Somos una consultoría interesada en el bienestar integral empresarial. Nuestra experiencia en cada una de las áreas de servicios nos ha consolidado como una firma que otorga soluciones estratégicas viables.',
+'Nuestro valor más sólido es la ética profesional, actuando con razón y conocimiento y poniendo en marcha prácticas anticorrupción en las empresas.'
+],
+additionalClasses: 'dark-blue-bg image-left'
+})
+%>
+
+<%- include('/features', {
+title: '',
+description: '',
+features: [
+{
+heading: 'Experiencia',
+description: 'El 90% de nuestros clientes son empresas familiares. Nuestra especialidad es la asesoría empresarial a micro, pequeñas y medianas empresas. Resolvemos tus dudas elaborando un caso práctico para la toma de sus decisiones empresariales. Con amplia experiencia en la gestión ante instituciones públicas de los diversos poderes del Estado en los tres niveles de gobierno.'
+},{
+heading: 'Filosofía Empresarial',
+description: 'En LOMAR sabemos que del patrimonio de las empresas dependen muchas familias.Nuestra filosifía es asesorar para el bienestar corporativo conforme a la ética profesional, de conformidad con las normativas y códigos deontológicos.'
+}
+],
+additionalClasses: 'light-blue-bg'
 })
 %>
 
