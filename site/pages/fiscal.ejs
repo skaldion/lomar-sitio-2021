@@ -1,0 +1,52 @@
+---
+title: 'Servicios Fiscales'
+permalink: 'fiscal/index.html'
+---
+<%- include('/hero', {
+mainText: 'Servicios Fiscales',
+secondaryText: [
+'Resolvemos todos los servicios relacionados con las diferentes disposiciones fiscales.',
+'¡La primera consulta es gratis!'
+],
+ctaButtonText: 'Contáctenos',
+additionalClasses: 'fiscal-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Servicios Fiscales',
+image: { src: '/images/money.jpeg', alt: 'Experiencia fiscal' },
+description: [
+'Atendemos cualquier servicio relacionado con las diferentes disposiciones fiscales en las diversas actividades económicas.',
+'Orientando al cliente en sus requisitos y obligaciones.',
+'Impuestos, Personas morales',
+'Personas físicas: RIF, Actividades Empresariales y Profesionales, Arrendamiento, Enajenación y adquisición de Bienes',
+'Dividendos, Intereses, Sector Primario, Salarios, Ingresos.',
+
+],
+additionalClasses: 'white-bg image-left'
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Impuestos</h3><p><li>Asesoría en impuestos recurrentes, para ser presentados ante el SAT.</li></p>'},
+{ htmlContent: '<h3>Personas morales</h3><p><li>Asesoría y consultoría en materia fiscal para el régimen, somos especialistas en PyMEs.</li></p>'},
+{ htmlContent: '<h3>Personas físicas</h3><p><li>Régimen de Incorporación Fiscal (RIF)</li><li>Actividades Empresariales y Profesionales</li><li>Arrendamiento</li><li>Enajenación y Adquisición de Bienes</li><li>Dividendos</li><li>Intereses</li><li>Sector Primario</li><li>Salarios</li><li>Ingresos</li></p>'},
+],
+additionalClasses: 'light-blue-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'Somos su mejor opción en temas Fiscales',
+secondaryText: [
+'¿Necesita una asesoría o tiene dudas fiscales de usted o de su negocio? Contáctenos y con gusto le ayudaremos.'
+],
+ctaButtonText: '¡Contáctenos!',
+additionalClasses: 'lomar-blue-bg',
+noButton: false,
+href: ''
+})
+%>

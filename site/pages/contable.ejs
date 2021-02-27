@@ -1,0 +1,53 @@
+---
+title: 'Servicios Contables'
+permalink: 'contable/index.html'
+---
+<%- include('/hero', {
+mainText: 'Servicios Contables',
+secondaryText: [
+'Somos reconocidos por ser expertos en asesoría en materia contable, administrativa y financiera',
+'¡La primera consulta es gratis!'
+],
+ctaButtonText: 'Contáctenos',
+additionalClasses: 'fiscal-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Servicios Contables',
+image: { src: '/images/dinero.jpg', alt: 'Dinero asesoria contable' },
+description: [
+'Somos un despacho con amplia experiencoa en el ámbito contable, siendo reconocidos por nuestros clientes pro ello.',
+'Expertos en asesoría contable, administrativa y financiera.',
+'CFDI, Declaraciones Mensuales, Bimestrales y Anuales',
+'Balance General y estado de resultados',
+'Auditorias',
+
+],
+additionalClasses: 'white-bg image-left'
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>CFDI</h3><p><li>Facturación y Nóminas</li></p>'},
+{ htmlContent: '<h3>Declaraciones</h3><p><li>Personas físicas</li><li>Personas Morales</li></p>'},
+{ htmlContent: '<h3>Balance General y Estado de Resultados</h3>'},
+{ htmlContent: '<h3>Auditoria</h3>'},
+],
+additionalClasses: 'light-blue-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'Somos su mejor opción en temas dentro del marco Contable',
+secondaryText: [
+'¿Necesita una asesoría o tiene dudas contables de usted o de su negocio? Contáctenos y con gusto le ayudaremos.'
+],
+ctaButtonText: '¡Contáctenos!',
+additionalClasses: 'lomar-blue-bg',
+noButton: false,
+href: ''
+})
+%>
