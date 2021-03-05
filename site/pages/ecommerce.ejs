@@ -3,12 +3,50 @@ title: 'Comercio Electrónico'
 permalink: 'comercioelectronico/index.html'
 ---
 <%- include('/hero', {
-mainText: '¿Vendes en alguna plataforma online?',
+mainText: '¿Vendes en alguna Plataforma Online?',
 secondaryText: [
-'Mercado Libre, Amazon, Shopify. Es necesario que estés en el nuevo régimen de plataformas digitales',
-'La primera consulta es gratis!'
+'Mercado Libre, Amazon, Shopify. Es necesario que estés en el NUEVO REGIMEN de PLATAFORMAS DIGITALES',
+'¡La primera consulta es gratis!'
 ],
 ctaButtonText: 'Pida su consulta gratuita!',
 additionalClasses: 'ecommerce-bg'
 })
 %>
+
+
+<%- include('/side-image', {
+heading: 'Regimen Plataformas Tecnológicas',
+image: { src: '/images/ecommerce2.jpeg', alt: 'Persona comprando online' },
+description: [
+'Si tu ingreso principal es a través de plataformas electrónicas, ya sea que hagas e-commerce a través de alguna plataforma, vendas servicios en sitios especializados o tengas una tienda en línea. Estás calificado dentro de un nuevo régimen fiscal.',
+'Si los ingresos que recibes por estas plataformas es mayor a los $300,000 MXN anuales, es necesario que estés dado de alta en este régimen. De lo contrario podrías estar incumpliendo ante el SAT.',
+'Es importante recordarte que el régimen de Plataformas DIgitales aplica a toda aquella persona qeu tenga ingresos  en alguna plataforma de comercio electrónico, sitio web propio de e-commerce y que rebasas este tope anteriormente mencionado.'
+],
+additionalClasses: 'dark-blue-bg image-right'
+})
+%>
+
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Plataformas de Ventas Online</h3><p><li>Mercado Libre</li><li>Amazon</li><li>Linio</li><li>Ebay</li><li>Segundamano</li><li>Facebook Marketplace</li><li>Instagram Marketplace</li><li>Whatsapp Market</li></p>'},
+{ htmlContent: '<h3>Sitio Web con E-Commerce</h3><p><li>Shopify</li><li>WooCommerce</li><li>PrestaShop</li><li>Squarespace</li><li>Magento</li><li>Wix</li><li>Big Cartel</li><li>Salesforce</li></p>'},
+{ htmlContent: '<h3>Plataformas de Subastas </h3><p><li>Ebay</li><li>Yahoo Auctions</li><li>Etsy</li><li>Rakuten</li></p>'},
+],
+additionalClasses: 'light-blue-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: '¿Vendes en alguna de estas plataformas y rebasas este tope?',
+secondaryText: [
+'Nosotros con gusto te asesoramos en este nuevo régimen de plataformas tecnológicas. Pregúntanos como'
+],
+ctaButtonText: '¡Contáctenos!',
+additionalClasses: 'lomar-blue-bg',
+noButton: false,
+href: ''
+})
+%>
+

@@ -44,6 +44,57 @@
     background-blend-mode: darken;
     color: colors.$white;
   }
+
+  &.servicios-bg {
+    background-attachment: local;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/images/servicios-Hero.jpeg");
+    background-color: colors.$softgray;
+    background-blend-mode: darken;
+    color: colors.$white;
+  }
+  &.fiscal-bg {
+    background-attachment: local;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/images/taxreturn.jpg");
+    background-color: colors.$softgray;
+    background-blend-mode: darken;
+    color: colors.$white;
+  }
+
+  &.legal-bg {
+    background-attachment: local;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/images/attorney.jpeg");
+    background-color: colors.$softgray;
+    background-blend-mode: darken;
+    color: colors.$white;
+  }
+
+  &.comercio-bg {
+    background-attachment: local;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/images/comercio-exterior.jpeg");
+    background-color: colors.$softgray;
+    background-blend-mode: darken;
+    color: colors.$white;
+  }
+
+  &.educacion-bg {
+    background-attachment: local;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/images/educacion.jpeg");
+    background-color: colors.$softgray;
+    background-blend-mode: darken;
+    color: colors.$white;
+  }
+
+
   .hero-message {
     text-align: left;
     margin-bottom: 40px;
