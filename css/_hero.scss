@@ -14,29 +14,32 @@
     font-size: 21px;
   }
   &.blue {
+    background-size: cover;
     background-attachment: local;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url("/images/desktop.jpg");
+    background-image: url("/images/desktop.webp");
     background-color: colors.$softgray;
     background-blend-mode: darken;
     color: colors.$white;
   }
 
   &.update-bg {
+    background-size: cover;
     background-attachment: local;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url("/images/update.jpg");
+    background-image: url("/images/update.webp");
     background-color: colors.$softgray;
     background-blend-mode: darken;
     color: colors.$white;
   }
   &.ecommerce-bg {
+    background-size: cover;
     background-attachment: local;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url("/images/ecommerce.jpg");
+    background-image: url("/images/ecommerce.webp");
     background-color: colors.$softgray;
     background-blend-mode: darken;
     color: colors.$white;
