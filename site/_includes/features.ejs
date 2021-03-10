@@ -10,7 +10,7 @@
         </div>
         <div class="row">
             <% features.forEach((feature) => { %>
-                <div class="col-sm">
+                <div class="<%- colClass ? colClass : 'col-sm'%>">
                     <% if (feature.image) { %>
                         <div class="image">
                             <img src="<%- feature.image.src%>" alt="<%- feature.image.alt%>">
