@@ -19,7 +19,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url("/images/desktop.webp");
-    background-color: colors.$softblue;
+    background-color: colors.$blue-004;
     background-blend-mode: darken;
     color: colors.$white;
   }
@@ -43,7 +43,7 @@
     background-color: colors.$softblue;
     background-blend-mode: darken;
     color: colors.$white;
-  }mer
+  }
 
   &.servicios-bg {
     background-size: cover;
@@ -51,7 +51,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url("/images/servicios-Hero.webp");
-    background-color: colors.$blue-002;
+    background-color: colors.$blue-003;
     background-blend-mode: darken;
     color: colors.$white;
   }
