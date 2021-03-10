@@ -15,7 +15,7 @@ additionalClasses: 'comercio-bg'
 
 <%- include('/side-image', {
 heading: 'Servicios Comercio Exterior',
-image: { src: '/images/comercioExterior2.jpeg', alt: 'Contenedores comercio exterior' },
+image: { src: '/images/comercioExterior2.webp', alt: 'Contenedores comercio exterior' },
 description: [
 'Asesoramos empresas en todos los pasos relacionados a las importaciones y exportaciones de bienes y servicios.',
 'Ayudamos a su empresa en toda la cadena del comercio exterior, desde la búsqueda de proveedores a nivel mundial',
@@ -30,12 +30,20 @@ additionalClasses: 'white-bg image-left'
 <%- include('/grid', {
 mainText: '',
 elements: [
-{ htmlContent: '<h3>Búsqueda de Proveedores</h3><p><ul><li>Buscamos el  proveedor de su servicio o producto a nivel mundial.</li></ul></p>'},
-{ htmlContent: '<h3>Negociación Internacional</h3><p><ul><li>Tenemos más de 13 años de experiencia negociando con empresas y fábricas en el extranjero, como China, EEUU, Reino Unido, Hong Kong, Taiwan, etc.</li></ul></p>'},
-{ htmlContent: '<h3>Supervisión de Producción y Control de Calidad</h3><p><ul><li>Tenemos un proceso de control sobre las fábricas para supervisar y controlar la calidad de la producción.</p>'},
-{ htmlContent: '<h3>Logística trasnacional</h3><p><ul><li>Ayudamos con la logística de sus envíos de puerta a puerta.</li></ul></p>'},
-{ htmlContent: '<h3>Trámites Aduanales</h3><li><p><ul>Padron de Importadores</li><li>Padrón de exportadores</li><li>Sectores Específicos</li></ul></p>'},
-{ htmlContent: '<h3>Inversión Extranjera</h3><p><ul><li>Le asesoramos con temas de inversión extranjera.</li></ul></p>'},
+{ htmlContent: '<h3>Búsqueda de Proveedores</h3><p>Buscamos el  proveedor de su servicio o producto a nivel mundial.</p>'},
+{ htmlContent: '<h3>Negociación Internacional</h3><p>Tenemos más de 13 años de experiencia negociando con empresas y fábricas en el extranjero, como: China, EEUU, Reino Unido, Hong Kong, Taiwan, etc.</p>'},
+{ htmlContent: '<h3>Supervisión de Producción</h3><p>Tenemos un proceso de control sobre las fábricas para supervisar y controlar la calidad de la producción.</p>'},
+],
+additionalClasses: 'light-blue-bg'
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Logística trasnacional</h3><p>Ayudamos con la logística de sus envíos de puerta a puerta.</p>'},
+{ htmlContent: '<h3>Trámites Aduanales</h3><p><li>Padron de Importadores</li><li>Padrón de exportadores</li><li>Sectores Específicos</li></p>'},
+{ htmlContent: '<h3>Inversión Extranjera</h3><p>Le asesoramos con temas de inversión extranjera.</p>'},
 ],
 additionalClasses: 'light-blue-bg'
 })
