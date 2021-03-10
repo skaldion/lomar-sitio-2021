@@ -7,9 +7,9 @@
     flex-direction: row;
     padding: 1rem;
     background-color: white;
-    align-items: center;
   }
-  .navigation-logo, .navigation-item {
+
+  .navigation-logo, .navigation-item, .navigation-item a{
     color: colors.$blue-002;
     transition: color 0.2s ease;
     &:hover {
@@ -17,6 +17,16 @@
       text-decoration: none;
     }
   }
+
+  button {
+    margin: 0 .5rem;
+  }
+
+  .separator-bottom {
+    border-bottom: 1px solid colors.$grey-001;
+    padding: 12px 0;
+  }
+
   .navigation-logo {
     display: inline-block;
     padding-top: .3125rem;
@@ -31,26 +41,46 @@
     display: flex;
     flex-direction: row;
     margin-left: auto;
-    .navigation-item {
-      padding: .5rem;
-      text-transform: uppercase;
+  }
 
-      &.active {
+  .navbar-collapse {
+    flex-grow: unset;
+  }
+
+  .navigation-item {
+    padding: .5rem 0;
+    a {
+      padding: 6px;
+    }
+
+    .active {
+      color: colors.$white;
+      background-color: colors.$blue-004;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+
+      &:hover {
         color: colors.$white;
-        background-color: colors.$blue-004;
-        border-radius: 4px;
-        transition: background-color 0.2s ease;
-
-        &:hover {
-          background-color: lighten(colors.$blue-004, 10%);
-        }
+        background-color: lighten(colors.$blue-004, 10%);
       }
     }
   }
-  img{
+
+  @include media-breakpoint-up(md) {
+    &.navbar {
+      padding: 1rem;
+    }
+
+    .navigation-item {
+      padding: .5rem;
+      a {
+        padding: .5rem;
+      }
+    }
+  }
+  img {
     box-shadow: none;
   }
-
   .logo{
     width:200px;
   }
