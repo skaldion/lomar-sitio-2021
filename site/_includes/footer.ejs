@@ -18,7 +18,16 @@
             <div class="col-sm">
                 <h5>Paginas</h5>
                 <ul>
-                    <% collections.all.forEach((navPage) => { %>
+                    <% collections.pages.forEach((navPage) => { %>
+                        <% if (!navPage.data || !navPage.data.title) return;%>
+                        <li>
+                            <a class="navigation-item<%- ` ${page.url === navPage.url && 'active'}` %>"
+                               href="<%- navPage.url %>">
+                                <%= navPage.data.title %>
+                            </a>
+                        </li>
+                    <% }) %>
+                    <% collections.servicios.forEach((navPage) => { %>
                         <% if (!navPage.data || !navPage.data.title) return;%>
                         <li>
                             <a class="navigation-item<%- ` ${page.url === navPage.url && 'active'}` %>"
